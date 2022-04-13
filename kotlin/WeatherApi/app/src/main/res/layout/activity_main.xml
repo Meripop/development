@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgWeather"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/weathericon2"
+        android:contentDescription="@string/weather_image" />
+
+    <EditText
+        android:id="@+id/etCityName"
+        android:hint="@string/enter_city_name"
+        android:layout_width="300dp"
+        android:maxLength="30"
+        android:layout_height="wrap_content"
+        android:inputType="textCapCharacters" />
+
+    <Button
+        android:id="@+id/btnResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/result"
+        android:textColor="@color/white"
+
+        />
+    <TextView
+        android:textSize="22sp"
+        android:id="@+id/tvResult"
+        android:lineSpacingExtra="2dp"
+        android:textColor="@color/purple_500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvresult"
+        />
+
+</LinearLayout>

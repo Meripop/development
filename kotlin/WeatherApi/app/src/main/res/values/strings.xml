@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">World Weather</string>
+    <string name="enter_city_name">Enter city name</string>
+    <string name="result">Result</string>
+    <string name="tvresult"></string>
+    <string name="weather_image">Weather image</string>
+</resources>

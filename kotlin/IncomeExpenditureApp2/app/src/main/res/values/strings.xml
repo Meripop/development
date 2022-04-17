@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Wallet</string>
+    <string name="tvIncomeResult">income</string>
+    <string name="btnSave">Save</string>
+    <string name="btnHelp">Help</string>
+    <string name="btnAbout">About</string>
+    <string name="btnStart">Start</string>
+    <string name="income">income</string>
+    <string name="etName">Enter name here</string>
+    <string name="etPrice">Enter price here</string>
+    <string name="weather_image">piggy</string>
+    <string name="btnCheck">Check all in</string>
+    <string name="tvCategory">category</string>
+    <string name="tvEuro">€</string>
+    <string name="tvPrice">Price</string>
+    <string name="tvName">Name</string>
+    <string name="tvDate">DATUM</string>
+    <string name="tvincome">Income:</string>
+    <string name="tvexpenditure">Expenditure:</string>
+    <string name="tvsum">Sum:</string>
+
+    <string-array name="category_array">
+        <item>Income</item>
+        <item>Expenditure</item>
+
+    </string-array>
+</resources>

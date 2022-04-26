@@ -61,3 +61,49 @@ naMe(4);
 //A függvényt is bele rakhatjuk változóba:
 var result=naMe(4);
 //eredmény: result=1000
+
+// button elemhez hozzá adom az addEventListener(,) methodot ami 2 értéket vár.
+// Egy esemény típust ami itt a click(stringként kell megadni)
+// és egy eseményt ami fusson le ha kattintunk, ami itt egy sajat funkcio
+document.querySelector("button").addEventListener("click",clickEd);
+
+function clickEd(){
+  alert('klikkeltem');
+}
+//név nélküli funkcióval:
+document.querySelector("button").addEventListener("click",function (){
+  alert('klikkeltem');
+});
+
+
+//Higher Order Functions= funkcó ami inputba kap egy másik funkciót
+//A calculatorNb fuggvénnyel meghívok két korábbi függvényt
+function addNb(nb1,nb2){
+	return nb1+nb2;
+}
+function subtractionNb(nb1,nb2){
+	return nb1-nb2;
+}
+function divisionNb(nb1,nb2){
+	return nb1/nb2;
+}
+function moduloNb(nb1,nb2){
+	return nb1%nb2;
+}
+function multipleNb(nb1,nb2){
+	return nb1*nb2;
+}
+function calculatorNb(nb1,nb2,operator){
+	return operator(nb1,nb2);
+}
+
+//hang lejátszása
+var audio = new Audio('sounds/tom-1.mp3');
+audio.play();
+
+//this-el kérdezek vissza, ha megtörtén(click) akkor csinalja az utána írtakat
+for(var i=0;i<document.querySelectorAll(".bob").length;i++){
+  document.querySelectorAll(".drum")[i].addEventListener("click",function (){
+    this.style.color="white";
+  });
+}

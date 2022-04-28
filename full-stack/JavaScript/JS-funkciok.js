@@ -107,3 +107,41 @@ for(var i=0;i<document.querySelectorAll(".bob").length;i++){
     this.style.color="white";
   });
 }
+
+
+//CallBack Function
+//billentű lenyomásakor a konzolra kiírja az adott billentyű adatait:
+//function(e): a keydown esemény megtörténésekor kiiírja a keydown funkcio értékeit, propertieit
+//
+document.addEventListener("keydown",function(e){
+  console.log(e);
+});
+// pl: charCode: 0, code: "KeyR", type: keydown
+
+//billentyű lenyomásakor a változónak értékül adja a lenyomott billentyű kódját
+document.addEventListener("keydown",function(e){
+  var keyBoardChar=e.key;
+});
+// pl: key: b
+
+
+function myFuncEventListener(typeOfE,callback){
+	var event={
+		eventType: "keydown",
+		key: "b"
+	}
+	if (event===typeOfE){
+		callback(event);
+	}
+}
+//hivas: (az e vissza adja a callback függvény értékét ami az event változónak az értékeit jelenti)
+myFuncEventListener("keydown",function(e){
+	console.log(e);
+});
+//eredmeny: {eventType: "keydown",key: "b"}
+
+//100 millisecondum múlva megtörténik az esemény, a pressed nevű klasszt leveszi az adott elem klasszi közül
+setTimeout(function(){
+    activeBtn.classList.remove("pressed");}, 100);
+
+}

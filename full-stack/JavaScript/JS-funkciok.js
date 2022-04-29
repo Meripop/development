@@ -61,3 +61,87 @@ naMe(4);
 //A függvényt is bele rakhatjuk változóba:
 var result=naMe(4);
 //eredmény: result=1000
+
+// button elemhez hozzá adom az addEventListener(,) methodot ami 2 értéket vár.
+// Egy esemény típust ami itt a click(stringként kell megadni)
+// és egy eseményt ami fusson le ha kattintunk, ami itt egy sajat funkcio
+document.querySelector("button").addEventListener("click",clickEd);
+
+function clickEd(){
+  alert('klikkeltem');
+}
+//név nélküli funkcióval:
+document.querySelector("button").addEventListener("click",function (){
+  alert('klikkeltem');
+});
+
+
+//Higher Order Functions= funkcó ami inputba kap egy másik funkciót
+//A calculatorNb fuggvénnyel meghívok két korábbi függvényt
+function addNb(nb1,nb2){
+	return nb1+nb2;
+}
+function subtractionNb(nb1,nb2){
+	return nb1-nb2;
+}
+function divisionNb(nb1,nb2){
+	return nb1/nb2;
+}
+function moduloNb(nb1,nb2){
+	return nb1%nb2;
+}
+function multipleNb(nb1,nb2){
+	return nb1*nb2;
+}
+function calculatorNb(nb1,nb2,operator){
+	return operator(nb1,nb2);
+}
+
+//hang lejátszása
+var audio = new Audio('sounds/tom-1.mp3');
+audio.play();
+
+//this-el kérdezek vissza, ha megtörtén(click) akkor csinalja az utána írtakat
+for(var i=0;i<document.querySelectorAll(".bob").length;i++){
+  document.querySelectorAll(".drum")[i].addEventListener("click",function (){
+    this.style.color="white";
+  });
+}
+
+
+//CallBack Function
+//billentű lenyomásakor a konzolra kiírja az adott billentyű adatait:
+//function(e): a keydown esemény megtörténésekor kiiírja a keydown funkcio értékeit, propertieit
+//
+document.addEventListener("keydown",function(e){
+  console.log(e);
+});
+// pl: charCode: 0, code: "KeyR", type: keydown
+
+//billentyű lenyomásakor a változónak értékül adja a lenyomott billentyű kódját
+document.addEventListener("keydown",function(e){
+  var keyBoardChar=e.key;
+});
+// pl: key: b
+
+
+function myFuncEventListener(typeOfE,callback){
+	var event={
+		eventType: "keydown",
+		key: "b"
+	}
+	if (event===typeOfE){
+		callback(event);
+	}
+}
+//hivas: (az e vissza adja a callback függvény értékét ami az event változónak az értékeit jelenti)
+myFuncEventListener("keydown",function(e){
+	console.log(e);
+});
+//eredmeny: {eventType: "keydown",key: "b"}
+
+//100 millisecondum múlva megtörténik az esemény, a pressed nevű klasszt leveszi az adott elem klasszi közül
+setTimeout(function(){
+    activeBtn.classList.remove("pressed");}, 100);
+
+}

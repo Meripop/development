@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BrainTrain1</string>
+    <string name="tvTimer">30s</string>
+    <string name="tvTask">2+3</string>
+    <string name="tvCounter">0/0</string>
+    <string name="tvNum1">0</string>
+    <string name="tvNum2">0</string>
+    <string name="tvNum3">0</string>
+    <string name="tvNum4">0</string>
+    <string name="tvAnswer">Correct!</string>
+    <string name="btnAgain">Play again</string>
+</resources>

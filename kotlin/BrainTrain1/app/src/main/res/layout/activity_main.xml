@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:background="#CFA363"
+        android:text="@string/tvTimer"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvCounter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="30dp" />
+
+    <TextView
+        android:id="@+id/tvTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="178dp"
+        android:layout_marginLeft="178dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginRight="178dp"
+        android:text="@string/tvTask"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvCounter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="208dp"
+        android:layout_marginLeft="208dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#5AA6C8"
+        android:text="@string/tvCounter"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvTimer"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tvNum1"
+        android:layout_width="176dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="#28B6A9"
+        android:gravity="center"
+        android:text="@string/tvNum1"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        app:backgroundTint="#28B6A9"
+        app:layout_constraintEnd_toStartOf="@+id/tvNum4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNum3" />
+
+    <Button
+        android:id="@+id/tvNum2"
+        android:layout_width="176dp"
+        android:layout_height="107dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:background="#DF7B7B"
+        android:gravity="center"
+        android:text="@string/tvNum2"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        app:backgroundTint="#DF7B7B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvNum3"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/tvNum3"
+        android:layout_width="176dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="#A181DA"
+        android:gravity="center"
+        android:text="@string/tvNum3"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        app:backgroundTint="#A181DA"
+        app:layout_constraintEnd_toStartOf="@+id/tvNum2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/tvNum4"
+        android:layout_width="176dp"
+        android:layout_height="107dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#C5426E"
+        android:gravity="center"
+        android:text="@string/tvNum4"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        app:backgroundTint="#C5426E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvNum1"
+        app:layout_constraintTop_toBottomOf="@+id/tvNum2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="97dp" />
+
+    <TextView
+        android:id="@+id/tvAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="183dp"
+        android:layout_marginLeft="183dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="183dp"
+        android:layout_marginRight="183dp"
+        android:text="@string/tvAnswer"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNum1" />
+
+    <Button
+        android:id="@+id/btnAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginRight="143dp"
+        android:text="@string/btnAgain"
+        android:visibility="invisible"
+        app:backgroundTint="#807474"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnswer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

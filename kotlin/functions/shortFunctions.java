@@ -79,3 +79,5 @@ binding.btnPlay.setOnClickListener{
 binding.btnPause.setOnClickListener{
     media.pause()
 }
+
+Plussz sor

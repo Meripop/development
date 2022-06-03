@@ -1,3 +1,5 @@
+//lenyege, hogy a lista utolsó két szám összege lesz a lista következő eleme
+
 function fibonacci(n) {
   var lista = [];
   if (n === 1) {
@@ -14,4 +16,3 @@ function fibonacci(n) {
   }
   return lista;
 }
-//lenyege, hogy a lista utolsó két szám összege lesz a lista következő eleme

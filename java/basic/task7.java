@@ -7,7 +7,7 @@ parancssori argumentumként olvassa be a sorszámot
 
  */
 
-public class task7 {
+public class Task7 {
     public static void main(String[] args) {
         System.out.println("Type a day: ");
         Scanner scanner = new Scanner(System.in);

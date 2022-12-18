@@ -1,5 +1,7 @@
 import java.util.Random;
-
+/*
+Készítsetek szerencsesüti programot, amely minden futtatása során kiír egy kis bölcs üzenetet. A program véletlenszerűen írjon ki üzeneteket, amit előre felvettünk benne. Mindig csak egyet.
+ */
 
 public class Task6 {
     public static void main(String[] args) {

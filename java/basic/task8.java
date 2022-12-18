@@ -4,10 +4,11 @@ import java.util.Scanner;
 Készítsetek programot, amely a felhasználótól vár 3 számot, amely számokról el tudja dönteni, hogy lehet-e egy háromszög 3 oldala, vagyis szerkeszthető-e a háromszög.
 Ha lehet, akkor írja ki: “You are a lucky person.” (Pl.: 2,3,4-re)
 Egyébként, írja ki: “Please, try again.” (Pl.: 1,2,4-re)
+Mindaddig ismételje a bekérést a felhasználótól, amíg nem ad neki helyes háromszög oldal adatokat
 
  */
 
-public class task8 {
+public class Task8 {
     public static void main(String[] args) {
         boolean flag = true;
         do {

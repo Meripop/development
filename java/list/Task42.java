@@ -22,7 +22,7 @@ public class Task42 {
             System.out.println("Type a temperature: ");
             double inputhom = scanner.nextDouble();
             homList.add(inputhom);
-            System.out.println("homelist " + homList);
+            System.out.println("Tempreture list " + homList);
             countOfNumb++;
             if (inputhom >= 38) {
                 lazas++;
@@ -33,8 +33,8 @@ public class Task42 {
             dailyPluss += daily;
         }
         double finalAtlag = dailyPluss / homList.size();
-        System.out.println("atlag: " + finalAtlag);
-        System.out.println("laazas volt " + lazas + "x");
+        System.out.println("Average: " + finalAtlag);
+        System.out.println("had a fever " + lazas + " times");
 
     }
 

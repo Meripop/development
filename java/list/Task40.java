@@ -3,7 +3,9 @@ import java.util.List;
 import java.util.Scanner;
 
 /*
-Írjatok vendéglista programot, amit a felhasználó tud feltölteni. Házibulit szervezünk és tudjuk, hogy 11-en férnek el a lakásban. Azonban fontos, hogy egy vendéget csak egyszer adhasson hozzá a felhasználó.
+Írjatok vendéglista programot, amit a felhasználó tud feltölteni.
+ Házibulit szervezünk és tudjuk, hogy 11-en férnek el a lakásban.
+ Azonban fontos, hogy egy vendéget csak egyszer adhasson hozzá a felhasználó.
 
  */
 public class Task40 {
@@ -15,7 +17,7 @@ public class Task40 {
 
         while (maxInList != 11) {
 
-            System.out.println("give a name, (eddig):" + maxInList);
+            System.out.println("Type a name, (so far):" + maxInList);
             String inputPeople = scanner.nextLine();
             if (guestList.contains(inputPeople)) {
                 System.out.println("again");

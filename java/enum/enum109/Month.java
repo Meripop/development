@@ -1,0 +1,6 @@
+package enum109;
+
+public enum Month {
+    JANUÁR, FEBRUÁR, MÁRCIUS, ÁPRILIS, MÁJUS, JÚNIUS, JÚLIUS,
+    AUGUSZTUS, SZEPTEMBER, OKTOBER, NOVEMBER, DECEMBER
+}

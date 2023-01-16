@@ -1,0 +1,5 @@
+package enum105;
+
+public enum Days {
+    MONDAY,THUSDAY,WEDNESDAY,THURSTDAY,FRIDAY,SATURDAY,SUNDAY
+}

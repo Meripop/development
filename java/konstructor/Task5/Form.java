@@ -1,4 +1,4 @@
-package konstruktor.Task5;
+package Task5;
 
 public class Form {
     private String email;

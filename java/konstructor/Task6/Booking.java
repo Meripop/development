@@ -1,4 +1,4 @@
-package konstruktor.konstrTask6;
+package Task6;
 
 public class Booking {
 

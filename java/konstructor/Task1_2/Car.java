@@ -1,7 +1,6 @@
-package konstruktor.Task1_2;
+package Task1_2;
 
 public class Car {
-
     // fields
     private String manufacturer;
     private String colour;
@@ -73,4 +72,5 @@ public class Car {
                 ", numberOfDoors=" + numberOfDoors +
                 '}';
     }
+
 }

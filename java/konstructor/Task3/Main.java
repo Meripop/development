@@ -1,9 +1,10 @@
-package konstruktor.Task3;
+package Task3;
 
 /*
 Készítsétek el az alábbi példánk POJO-ját és 3 példányát a képen látható
-tulajdonságokkal és hozzájuk tartozó getter/setter metódusokkal. (a többi metódusra
-most nincs szükségünk
+tulajdonságokkal és hozzájuk tartozó getter/setter metódusokkal.
+(a többi metódusra most nincs szükségünk)
+
  */
 public class Main {
     public static void main(String[] args) {

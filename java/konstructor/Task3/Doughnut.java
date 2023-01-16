@@ -1,4 +1,4 @@
-package konstruktor.Task3;
+package Task3;
 
 public class Doughnut {
     // fields
@@ -56,5 +56,16 @@ public class Doughnut {
 
     public void setDecoration(String decoration) {
         this.decoration = decoration;
+    }
+
+    @Override
+    public String toString() {
+        return "Doughnut{" +
+                "shape='" + shape + '\'' +
+                ", flavour='" + flavour + '\'' +
+                ", material='" + material + '\'' +
+                ", size=" + size +
+                ", decoration='" + decoration + '\'' +
+                '}';
     }
 }

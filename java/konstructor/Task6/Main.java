@@ -1,4 +1,5 @@
-package konstruktor.konstrTask6;
+package Task6;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -44,16 +45,15 @@ Phone number: 29118351
 Check in date: 2017-12-01
 Checko out date: 2017-12-06
 Number of guests: 4
-
-
  */
 public class Main {
     public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-
+// Task6/b
         int round = Integer.parseInt(args[0]);
-        Booking bookings[] = new Booking[round];
+
+        Booking[] bookings = new Booking[round];
         Map<String, Integer> bookingsHash = new HashMap<>();
         for (int i = 0; i < round; i++) {
             int phone;

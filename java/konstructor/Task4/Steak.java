@@ -1,4 +1,4 @@
-package konstruktor.Task4;
+package Task4;
 
 public class Steak {
     private String typeOfMeat;
@@ -53,5 +53,16 @@ public class Steak {
 
     public void setCuring(String curing) {
         this.curing = curing;
+    }
+
+    @Override
+    public String toString() {
+        return "Steak{" +
+                "typeOfMeat='" + typeOfMeat + '\'' +
+                ", timeOfCooking=" + timeOfCooking +
+                ", typeOfCooking='" + typeOfCooking + '\'' +
+                ", seasoning='" + seasoning + '\'' +
+                ", curing='" + curing + '\'' +
+                '}';
     }
 }

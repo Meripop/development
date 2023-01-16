@@ -1,4 +1,4 @@
-package konstruktor.Task5;
+package Task5;
 
 import java.util.Scanner;
 
@@ -51,5 +51,4 @@ public class Main {
 
         System.out.println(user);
     }
-
 }

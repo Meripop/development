@@ -1,0 +1,75 @@
+plugins {
+    id 'java'
+}
+
+group 'hu.progmatic.testframework'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.testng:testng:7.7.1'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.8.1'
+    implementation 'io.cucumber:cucumber-java:7.11.1'
+    implementation 'io.cucumber:cucumber-testng:7.11.1'
+    implementation 'com.aventstack:extentreports:5.0.9'
+    implementation 'org.apache.logging.log4j:log4j-core:2.20.0'
+    testImplementation 'org.testng:testng:7.1.0'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'commons-io:commons-io:2.6'
+    implementation 'ru.yandex.qatools.ashot:ashot:1.5.4'
+}
+
+test {
+    useTestNG()
+}
+task dateTests(type: Test) {
+    def groups = System.getProperty('groups', 'date')
+    useTestNG() {
+        includeGroups groups
+    }
+}
+task footerTests(type: Test) {
+    def groups = System.getProperty('groups', 'footer')
+    useTestNG() {
+        includeGroups groups
+    }
+}
+task loginTests(type: Test) {
+    def groups = System.getProperty('groups', 'login')
+    useTestNG() {
+        includeGroups groups
+    }
+}
+task eToETests(type: Test) {
+    def groups = System.getProperty('groups', 'end2end')
+    useTestNG() {
+        includeGroups groups
+    }
+}
+task pimTests(type: Test) {
+    def groups = System.getProperty('groups', 'pim')
+    useTestNG() {
+        includeGroups groups
+    }
+}
+task stateTransitionTests(type: Test) {
+    def groups = System.getProperty('groups', 'statetransition')
+    useTestNG() {
+        includeGroups groups
+    }
+}
+task regressionTests(type: Test) {
+    def groups = System.getProperty('groups', 'regression')
+    useTestNG() {
+        includeGroups groups
+    }
+}
+task smokeTests(type: Test) {
+    def groups = System.getProperty('groups', 'smoke')
+    useTestNG() {
+        includeGroups groups
+    }
+}

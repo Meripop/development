@@ -1,0 +1,3 @@
+Reservation:  Booking Name: Roby ,Number of person: 3 ,Days: 6 ,Room price: 11000 ,Breakfast price: 27000 Total cost: 120000
+Reservation:  Booking Name: YuYi ,Number of person: 5 ,Days: 3 ,Room price: 11000 ,Breakfast price: 13500 Total cost: 60000
+Reservation:  Booking Name: Panna ,Number of person: 8 ,Days: 2 ,Room price: 25000 ,Breakfast price: 0 Total cost: 50000

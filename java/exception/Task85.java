@@ -21,13 +21,13 @@ public class Task85 {
 
     public static void main(String[] args) {
         int result = 0;
-        boolean isItNumber = true;
-        while (isItNumber) {
+        boolean isItNotNumber = true;
+        while (isItNotNumber) {
             try {
                 result = getNumberFromConsole();
-                isItNumber = false;
+                isItNotNumber = false;
             } catch (InputMismatchException exception) {
-                isItNumber = true;
+                isItNotNumber = true;
                 System.out.println("You added a string, only number please!");
             }
         }
